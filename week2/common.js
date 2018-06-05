@@ -67,5 +67,5 @@ console.log(tkTimeHour)
 let tkTimeFilt = tkTimeHour.filter(tk => tk.duration<2)
 console.log(tkTimeFilt)
 
-let spend = tkTimeFilt.map(tk => tk.duration *8).reduce((x,y) => x+y)
+let spend = tkTimeFilt.map(tk => tk.duration *8).reduce((x,y) => x+y).toFixes(2);
 console.log('spend : ' + spend + '€')
